@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Page</title>
+</head>
+<body>
+    <!--main heading-->
+    <h1>Welcome to our School Portal</h1>
+
+    <!--INTO TEXT-->
+    <p><strong>Register below</strong> to join our program.</p>
+    <p><em>Please fill in all required fields carefully.</em></p>
+
+    <!--student Table-->
+    <h2>Registered Students</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Email</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>Web Development</td>
+                <td>John@gmail.com</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>Micheal james</td>
+                <td>Data Analysis</td>
+                <td>michealwillie@gmail.com</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>Mary Willimas</td>
+                <td>UI/UX Design</td>
+                <td>marywillie@gmail.com</td>
+                <td>Inactive</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--Course Table-->
+    <h2>Courses Offered</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Course Name</th>
+                <th>Duration</th>
+                <th>Mode</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>web developement</td>
+                <td>6 months</td>
+                <td>Online</td>
+            </tr>
+            <tr>
+                <td>Data Analyst</td>
+                <td>4 months</td>
+                <td>Hybrid</td>
+            </tr>
+            <tr>
+                <td>UI/UX</td>
+                <td>3 months</td>
+                <td>Onsite</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--Useful Link-->
+    <h2>Useful Links</h2>
+
+    <ul>
+        <li><a href="https://www.example.com">Visit School Website</a></li>
+        <li><a href="https://www.google.com" target="_blank">Open Google in new tab</a></li>
+        <li><a href="https://www.theodinproject.com" target="_blank"> The Odinproject</a></li>
+    </ul>
+
+    <!--student Registration Form-->
+    <h2>Student Registration Form</h2>
+
+    <form action="process.php" method="post">
+
+    <!--Full name-->
+    <div>
+        <label for="Full Name">Full Name</label>
+        <input type="text" name="Full Name" required>
+    </div>
+    <br>
+
+     <div>
+        <label for="email">email</label>
+        <input type="email" name="email" required>
+    </div>
+    <br>
+    <div>
+        <label for="Phone Number">Phone Number</label>
+        <input type="tel" name="phone" required>
+    </div>
+    <br>
+    <div>
+        <label for="Courses">Courses</label>
+            <select name="course" name="course">
+                <option value="">Select Course</option>
+                <option value="web">Web Development</option>
+                <option value="data">Data Analyst</option>
+                <option value="ui">UI/UX</option>
+            </select>
+    </div>
+    </form>
+    <div>
+    <br>
+    <div>
+        <!--Radio Button-->
+        <label for="Gender">Gender</label>
+            <input type="radio" name="Gender" value="male" required>Male
+            <input type="radio" name="Gender" value="Female">Female
+            <input type="radio" name="Gender" value="Other"> Other
+    </div>
+    <br>
+    <div>
+        <label for="Message">Message</label>
+            <textarea name="Message" name="Message" cols="40" rows="4" required></textarea>
+    </div>
+    <br>
+ <!-- Agree to Terms Checkbox -->
+    <div>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="Checkbox">I agree to the terms and conditions</label>
+    </div>
+    <br>
+    <!--submit button-->
+    <button type="submit">submit</button>
+</body>
+</html>

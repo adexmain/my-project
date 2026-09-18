@@ -1,0 +1,91 @@
+/* 
+/* General page styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container styling */
+.name-container {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 320px;
+}
+
+/* Label and input */
+label {
+  font-size: 16px;
+  color: #333;
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #0078d7;
+}
+
+/* Greeting and message */
+h2 {
+  margin-top: 20px;
+  color: #0078d7;
+}
+
+p {
+  color: #555;
+  font-size: 14px;
+}
+
+/* Submit button */
+#submitBtn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #28a745; /* Green */
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#submitBtn:hover {
+  background-color: #218838;
+}
+
+/* Reset button */
+#resetBtn {
+  margin-top: 15px;
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #dc3545; /* Red text */
+  font-size: 16px;
+  border: 2px solid #dc3545;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#resetBtn:hover {
+  background-color: #dc3545;
+  color: #fff;
+} 
+ 

@@ -1,0 +1,194 @@
+
+body {
+    margin: 0;
+    font-family: sans-serif;  
+}
+.header {
+    background-color: rgb(86, 86, 249);
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 45px;
+}
+
+
+.nav a {
+    color: aliceblue;
+    text-decoration: none;
+    display: block;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+}
+
+.nav li {
+    margin-left: 20px;
+}
+
+.nav a:hover {
+    color: #c5cae9;
+    transform: rotate(6deg);
+    transition: 0.3s ease-out;
+
+}
+
+.welcome {
+    background-color: rgb(237, 235, 235);
+    margin: none;
+    padding: 60px 45px;
+    display: flex;
+    justify-content: center;
+}
+
+.welcome-inner {
+    max-width: 760px;
+}
+
+.welcome {
+    font-weight: normal;
+    font-size: 20px;
+    margin: 0;
+}
+
+.welcome p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.button {
+    background-color: blue;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    display: inline-block;
+
+}
+
+.features {
+    background-color: #e8eaf6;
+    padding: 60px 45px;
+}
+
+.features-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-column-gap: 45px;
+    font-size: 1rem;
+}
+
+*/LOGIN PAGE */
+
+body {
+    background: f2f2f2;
+}
+
+header {
+    background: rgb(102, 102, 254);
+    padding: 15px 0;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 40px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.login-btn {
+    border: 1px solid white;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.form-box {
+    background: white;
+    padding: 35px;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.form-box h3{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.remember-forget {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.remember-forget a {
+    text-decoration: none;
+    color: rgb(102, 102, 254);
+    margin-bottom: 10px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: rgb(102, 102, 254);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    background: #141413;
+}
+
+.footer {
+    border-top: 1px solid #ccc;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    color: #555;
+    background: #f3f3f9;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #555;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+

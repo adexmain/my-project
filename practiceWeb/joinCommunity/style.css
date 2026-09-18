@@ -1,0 +1,127 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: "Montserrat", sans-serif;
+}
+
+
+body {
+background:#eee;
+display:flex;
+justify-content:center;
+padding:40px;
+
+}
+
+.container{
+width:650px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+border-radius:8px;
+}
+
+
+.join{
+background:white;
+padding:30px;
+
+}
+
+.join h2{
+color:#2bb3b1;
+margin-bottom:10px;
+}
+
+.join h3{
+color:#c0df34;
+margin-bottom:15px;
+}
+
+.join p{
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: bold;
+    color: grey;
+}
+
+.pricing {
+display:flex;
+
+
+}
+
+.price-tag {
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.per-month {
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.subscription{
+background:#2bb3b1;
+color:white;
+flex:1;
+padding:20px;
+
+}
+
+.subscription h2 {
+    font-size: medium;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+}
+
+ button {
+    margin: 20px;
+    background-color: #c0df34;
+    color: #eee;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 65px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover{
+background-color: rgb(29, 63, 52);
+color: azure;
+
+}
+
+.subscription p {
+    padding-bottom: 25px;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.why-us{
+background:#4abebd;
+color:white;
+flex:1;
+padding: 20px;
+
+}
+
+.why-us h2{
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+.why-us p {
+    padding-top: 10px;
+    font-size: smaller;
+}
+
+.dollar span{
+    font-size: 12px;
+    margin-inline-start: 4px;
+}
+

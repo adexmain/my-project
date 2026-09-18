@@ -1,0 +1,58 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f2f2f2;
+    align-items:center;
+    display: flex;
+    flex-direction: column;
+}
+
+.Search input{
+    padding:10px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    margin-bottom:20px;
+}
+
+.photo-man{
+    width:400px;
+    margin-bottom:30px;
+    border-radius:10px;
+}
+
+label{
+    display:none;
+}
+
+.form-name,
+.mail-box{
+    margin-bottom:15px;
+}
+
+input{
+    width:250px;
+    padding:12px;
+    border-radius:10px;
+    border:1px solid #ccc;
+    font-size:14px;
+    background:#f7f7f7;
+}
+
+.mail-box input{
+    width:520px;
+}
+
+button{
+    width:520px;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#3f73d8;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#2f5fc2;
+}
