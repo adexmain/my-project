@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support | Ledgerly</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <h1 class="brand">ledger<span>ly</span></h1>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="#" data-logout>Log out</a>
+      <div class="settings-wrap"><button class="settings-toggle" type="button" data-settings-toggle aria-label="Open settings" aria-expanded="false">&#9881;</button><div class="settings-panel" data-settings-panel hidden><h3 data-copy="settings">Settings</h3><label data-copy="background">Background</label><div class="theme-options"><button class="theme-option selected" type="button" data-theme="paper">Paper</button><button class="theme-option" type="button" data-theme="sunset">Sunset</button><button class="theme-option" type="button" data-theme="night">Night</button></div><label for="language" data-copy="language">Language</label><select id="language" data-language><option value="en">English</option><option value="es">Español</option><option value="fr">Français</option></select></div></div>
+    </nav>
+  </header>
+
+  <figure class="support-visual"><img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80" alt="Support team collaborating at a desk"></figure>
+  <main class="form-container">
+
+    <div class="eyebrow">We are here to help</div>
+    <h2>Talk to support</h2>
+    <p>Send us a note and our team will get back to you shortly.</p>
+    <form id="supportForm">
+
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" placeholder="What can we help with?" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" placeholder="Tell us a little more..." required></textarea>
+
+      <button type="submit">Send Message</button>
+
+    </form>
+
+  </main>
+
+  <div id="toast" class="toast"></div>
+  <div class="cursor-spot" data-cursor-spot></div>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Ledgerly</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <h1 class="brand">ledger<span>ly</span></h1>
+    <nav>
+      <a href="support.html">Support</a>
+      <a href="#" data-logout>Log out</a>
+      <div class="settings-wrap"><button class="settings-toggle" type="button" data-settings-toggle aria-label="Open settings" aria-expanded="false">&#9881;</button><div class="settings-panel" data-settings-panel hidden><h3 data-copy="settings">Settings</h3><label data-copy="background">Background</label><div class="theme-options"><button class="theme-option selected" type="button" data-theme="paper">Paper</button><button class="theme-option" type="button" data-theme="sunset">Sunset</button><button class="theme-option" type="button" data-theme="night">Night</button></div><label for="language" data-copy="language">Language</label><select id="language" data-language><option value="en">English</option><option value="es">Español</option><option value="fr">Français</option></select></div></div>
+    </nav>
+  </header>
+
+  <main class="dashboard">
+
+    <div class="dashboard-head">
+      <div><div class="eyebrow">Overview</div><h2>Good to see you, <span id="userName">there</span>.</h2><p class="dashboard-intro">Here is your latest account snapshot.</p></div>
+      <button class="outline-btn" data-logout>Log out</button>
+    </div>
+    <div class="user-strip"><div><small>Signed in as</small><strong id="userEmail">Loading...</strong></div><div class="eyebrow">Account active</div></div>
+    <div class="card-container">
+
+  <div class="card">
+    <h3>Account Status</h3>
+    <p>Active</p>
+  </div>
+
+  <div class="card">
+    <h3>User Type</h3>
+    <p id="userTypeDisplay">-</p>
+  </div>
+
+  <div class="card">
+    <h3>Available balance</h3>
+    <p>$4,280.90</p>
+  </div>
+  </div>
+  </main>
+
+  <div id="toast" class="toast"></div>
+  <div class="cursor-spot" data-cursor-spot></div>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

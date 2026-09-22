@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ledgerly | Personal finance, made clear</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <h1 class="brand">ledger<span>ly</span></h1>
+
+    <nav>
+      <a class="active" href="index.html">Home</a>
+      <a href="login.html">Sign in</a>
+      <a class="nav-cta" href="register.html">Open account</a>
+      <div class="settings-wrap">
+        <button class="settings-toggle" type="button" data-settings-toggle aria-label="Open settings" aria-expanded="false">&#9881;</button>
+        <div class="settings-panel" data-settings-panel hidden>
+          <h3 data-copy="settings">Settings</h3><label data-copy="background">Background</label>
+          <div class="theme-options"><button class="theme-option selected" type="button" data-theme="paper">Paper</button><button class="theme-option" type="button" data-theme="sunset">Sunset</button><button class="theme-option" type="button" data-theme="night">Night</button></div>
+          <label for="language" data-copy="language">Language</label><select id="language" data-language><option value="en">English</option><option value="es">Español</option><option value="fr">Français</option></select>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <section>
+      <div class="eyebrow">Your money, in focus</div>
+      <h2>A calmer way to manage your money.</h2>
+      <p>Ledgerly brings your everyday finances into one clear, secure workspace. Know where you stand, and make your next move with confidence.</p>
+
+    <div class="cta">
+      <a href="register.html" class="btn">Create your account</a>
+      <a href="login.html" class="btn secondary">Sign in</a>
+    </div>
+    </section>
+    <aside class="hero-panel">
+      <div class="eyebrow">This month</div>
+      <strong>$4,280.90</strong>
+      <small>Available balance</small>
+      <div class="mini-row"><span>Spending</span><b>-$1,240.50</b></div>
+      <div class="mini-row"><span>Savings rate</span><b>+12.4%</b></div>
+    </aside>
+  </main>
+  <figure class="hero-visual"><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=80" alt="Person reviewing finances on a laptop"><figcaption>Tools for the decisions that matter.</figcaption></figure>
+  <div class="cursor-spot" data-cursor-spot></div>
+  
+  <script src="js/app.js"></script>
+</body>
+</html>
