@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box | Everyday footwear</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">BOX<span>.</span></a>
+    <nav aria-label="Main navigation"><a href="#products">Shop</a><a href="#community">Community</a></nav>
+    <button class="cart-button" type="button" aria-label="View cart">Cart <span id="cart-count">0</span></button>
+  </header>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-text"><p class="eyebrow">THE DAILY EDIT / 2024</p><h1 id="hero-title">Good shoes.<br><em>Better days.</em></h1><p class="hero-copy">Thoughtful footwear for long walks, quick getaways, and every plan in between.</p><a class="primary-button" href="#products">Explore the collection <span>↘</span></a></div>
+      <div class="hero-image"><img src="shoes.jpg" alt="Black and white running shoe"><span class="image-note">01 / everyday runner</span></div>
+    </section>
+    <section class="shop-section" id="products" aria-labelledby="products-title">
+      <div class="section-heading"><div><p class="eyebrow">FIND YOUR PAIR</p><h2 id="products-title">Popular right now</h2></div><label class="search-wrap" for="search"><span>⌕</span><input type="search" id="search" placeholder="Search shoes..."></label></div>
+      <div class="product-grid">
+        <article class="product-card" data-product="Nike Runner"><div class="product-image"><img src="shoes.jpg" alt="Nike Runner shoe"></div><div class="product-details"><div><h3>Nike Runner</h3><p>Lightweight / Black</p></div><strong>$39</strong></div><button class="add-to-cart" type="button">Add to cart <span>+</span></button></article>
+        <article class="product-card" data-product="Ladies Sport"><div class="product-image"><img src="ladiesshoes.jpg" alt="Ladies Sport shoe"></div><div class="product-details"><div><h3>Ladies Sport</h3><p>Everyday / White</p></div><strong>$45</strong></div><button class="add-to-cart" type="button">Add to cart <span>+</span></button></article>
+        <article class="product-card" data-product="Tennis Pro"><div class="product-image"><img src="tennis-shoe.jpg" alt="Tennis Pro shoe"></div><div class="product-details"><div><h3>Tennis Pro</h3><p>Court ready / Green</p></div><strong>$52</strong></div><button class="add-to-cart" type="button">Add to cart <span>+</span></button></article>
+        <article class="product-card" data-product="Corporate Classic"><div class="product-image"><img src="coperateshoe.jpg" alt="Corporate Classic shoe"></div><div class="product-details"><div><h3>Corporate Classic</h3><p>Polished / Brown</p></div><strong>$60</strong></div><button class="add-to-cart" type="button">Add to cart <span>+</span></button></article>
+      </div>
+      <p class="empty-state" hidden>No shoes found. Try another search.</p>
+    </section>
+    <section class="community" id="community" aria-labelledby="community-title">
+      <div class="community-intro"><p class="eyebrow">THE BOX CIRCLE</p><h2 id="community-title">Good company<br>makes the miles.</h2><p>Meet a few people from the community. Add a friend and share the next route.</p></div>
+      <div class="cat-container">
+        <article class="myCat"><img src="cat-image.jpg" alt="Oliver"><h3>Oliver</h3><p>2 mutual friends</p><button class="friend-button" type="button">Add friend</button></article>
+        <article class="myCat"><img src="cat2-image.jpg" alt="Frank"><h3>Frank</h3><p>2 mutual friends</p><button class="friend-button" type="button">Add friend</button></article>
+        <article class="myCat"><img src="cat3-image.jpg" alt="Serah Wills"><h3>Serah Wills</h3><p>2 mutual friends</p><button class="friend-button" type="button">Add friend</button></article>
+        <article class="myCat"><img src="catimage4.jpg" alt="John Doe"><h3>John Doe</h3><p>2 mutual friends</p><button class="friend-button" type="button">Add friend</button></article>
+      </div>
+    </section>
+  </main>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
