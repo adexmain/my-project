@@ -1,69 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>articlewebsite</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Signal Journal explores thoughtful ideas about technology, culture, and the way we work.">
+    <title>Signal Journal | Ideas for a changing world</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="header"> 
-        <h1>OurLogo</h1> 
-        <ul class="nav">
-            <li><a href="login.html" target="_blank">login</a></li>
-            <li><a href="#">Home</a></li> 
-            <li><a href="#">About</a></li> 
-            <li><a href="#">Contact</a>
-            </li> 
-        </ul> 
-        
-        </div> 
-        
-        <div class="welcome"> 
-            <div class="welcome-inner">
-                 <h1>Welcome to Our Site!</h1> 
-                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati consequatur non ullam dicta! Impedit amet ad, 
-                    doloribus nam, soluta ea magnam ullam, reprehenderit quibusdam quidem eius nostrum vero sapiente aperiam! 
-                </p>
-                <a class="button" href="#">Learn More</a> </div> </div>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="Signal Journal home">signal<span>.</span></a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a class="active" href="#latest">Latest</a>
+                <a href="#technology">Technology</a>
+                <a href="#culture">Culture</a>
+                <a href="#about">About</a>
+            </nav>
+            <a class="login-link" href="login.html">Log in <span aria-hidden="true">↗</span></a>
+        </div>
+    </header>
+    <main id="main-content">
+        <section class="intro section-shell" aria-labelledby="page-title">
+            <div class="intro-copy">
+                <p class="eyebrow">Independent ideas · Since 2026</p>
+                <h1 id="page-title">A clearer signal in a noisy world.</h1>
+                <p class="intro-text">Signal Journal is a thoughtful guide to the ideas, tools, and cultural shifts shaping how we live and work.</p>
             </div>
-                       
-        <div class="features">
-            <div class="features-inner">
-            <div class="featured-item">
-            <h3>Cool feature #1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elite Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            Nostrum sed iure quas modi aliquam,  tenetur porro ducimus assumenda vel commodi, omnis at, saepe temporibus autem
-            tenetur porro ducimus assumenda vel commodi, atque ipsum voluptates! Deleniti minus omnis at, saepe temporibus autem.
-            </p>
+            <p class="issue-note">Issue 04<br><span>September 2026</span></p>
+        </section>
+        <section id="latest" class="featured section-shell" aria-labelledby="featured-title">
+            <article id="article" class="lead-story">
+                <div class="lead-art" aria-hidden="true"><span>01</span><span class="art-line"></span><span class="art-circle"></span></div>
+                <div class="story-copy">
+                    <p class="category">The big idea</p>
+                    <h2 id="featured-title"><a href="#article">The quiet power of doing less, better.</a></h2>
+                    <p class="summary">In a culture built around constant acceleration, restraint has become a radical creative advantage. Here is how to make space for work that lasts.</p>
+                    <div class="byline"><span>By Maya Chen</span><span>8 min read</span></div>
+                </div>
+            </article>
+        </section>
+        <section class="latest section-shell" aria-labelledby="latest-title">
+            <div class="section-heading">
+                <p class="eyebrow">Fresh perspective</p>
+                <h2 id="latest-title">Read the latest</h2>
+                <a class="text-link" href="#latest">View all stories <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="story-grid">
+                <article class="story-card" id="technology">
+                    <div class="card-art art-blue" aria-hidden="true"><span>02</span><div class="orbit"></div></div>
+                    <p class="category">Technology</p>
+                    <h3><a href="#article">The human skill that AI cannot automate</a></h3>
+                    <p class="card-summary">Good judgment starts with asking a better question.</p>
+                    <div class="byline"><span>Owen Brooks</span><span>5 min read</span></div>
+                </article>
+                <article class="story-card" id="culture">
+                    <div class="card-art art-coral" aria-hidden="true"><span>03</span><div class="stack"></div></div>
+                    <p class="category">Culture</p>
+                    <h3><a href="#article">Why the best rooms are designed for conversation</a></h3>
+                    <p class="card-summary">A case for spaces that bring people back to each other.</p>
+                    <div class="byline"><span>Leila Adeyemi</span><span>6 min read</span></div>
+                </article>
+                <article class="story-card">
+                    <div class="card-art art-gold" aria-hidden="true"><span>04</span><div class="sun"></div></div>
+                    <p class="category">Work</p>
+                    <h3><a href="#article">A smaller calendar can hold a bigger life</a></h3>
+                    <p class="card-summary">Reclaiming attention is a practical, not sentimental, choice.</p>
+                    <div class="byline"><span>Jon Bell</span><span>4 min read</span></div>
+                </article>
+            </div>
+        </section>
+        <section id="about" class="newsletter section-shell" aria-labelledby="newsletter-title">
+            <div><p class="eyebrow">The Sunday signal</p><h2 id="newsletter-title">One good read,<br>every Sunday.</h2></div>
+            <div class="newsletter-copy">
+                <p>A short, considered selection of our best stories and the ideas worth carrying into the week.</p>
+                <form class="signup-form" action="#" method="post">
+                    <label class="sr-only" for="email">Email address</label>
+                    <input id="email" name="email" type="email" placeholder="Your email address" autocomplete="email" required>
+                    <button type="submit">Subscribe <span aria-hidden="true">→</span></button>
+                </form>
+                <small>No noise. Unsubscribe anytime.</small>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <a class="brand" href="index.html">signal<span>.</span></a>
+            <p>Ideas for a changing world.</p>
+            <div class="footer-links"><a href="#about">About</a><a href="login.html">Member login</a><a href="mailto:hello@signaljournal.example">Contact</a></div>
+            <p class="copyright">© 2026 Signal Journal</p>
         </div>
-
-        <div class="featured-item">
-            <h3>Cool feature #2</h3>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elite Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            Nostrum sed iure quas modi aliquam,  tenetur porro ducimus assumenda vel commodi, omnis at, saepe temporibus autem
-            tenetur porro ducimus assumenda vel commodi, atque ipsum voluptates! Deleniti minus omnis at, saepe temporibus autem.
-            </p>
-        </div>
-
-        <div class="featured-item">
-            <h3>Cool feature #3</h3>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elite Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            Nostrum sed iure quas modi aliquam,  tenetur porro ducimus assumenda vel commodi, omnis at, saepe temporibus autem
-            tenetur porro ducimus assumenda vel commodi, atque ipsum voluptates! Deleniti minus omnis at, saepe temporibus autem.
-            </p>
-        </div>
-    </div>
-</div>
-<footer class="footer">
-    <p>©2026 Box</p>
-    <a href="#">Privacy Policy</a>
-    <a href="#">Terms</a>
-    <a href="#">Help</a> 
-</footer>
+    </footer>
 </body>
 </html>

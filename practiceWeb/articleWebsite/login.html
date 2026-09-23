@@ -1,44 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Log in to your Signal Journal member account.">
+    <title>Member login | Signal Journal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a class="skip-link" href="#login-content">Skip to login form</a>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="Signal Journal home">signal<span>.</span></a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="index.html#latest">Latest</a>
+                <a href="index.html#technology">Technology</a>
+                <a href="index.html#culture">Culture</a>
+                <a href="index.html#about">About</a>
+            </nav>
+            <a class="login-link" href="login.html" aria-current="page">Log in <span aria-hidden="true">↗</span></a>
+        </div>
+    </header>
 
-<header>
-    <ul class="navigation">
-        <li><a href="index.html" target="_blank">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#" class="login-btn">Login</a></li>
-    </ul>
-</header>
-
-<div class="form-container">
-    <div class="form-box">
-        <h3>Sign into Your Account</h3>
-        <form>
-            <div class="input-box">
-                <label>Email</label>
-                <input type="email" required>
+    <main id="login-content" class="login-page">
+        <section class="login-intro" aria-labelledby="login-title">
+            <p class="eyebrow">Welcome back</p>
+            <h1 id="login-title">Return to the signal.</h1>
+            <p>Sign in to save stories, follow writers, and keep your reading list close.</p>
+        </section>
+        <section class="login-panel" aria-label="Member sign in">
+            <div class="login-panel-heading">
+                <span class="panel-number">Member access / 01</span>
+                <span class="panel-mark" aria-hidden="true">↗</span>
             </div>
+            <form class="login-form" action="#" method="post">
+                <div class="input-box">
+                    <label for="email">Email address</label>
+                    <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+                </div>
+                <div class="input-box">
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+                </div>
+                <div class="remember-forget">
+                    <label><input name="remember" type="checkbox"> <span>Remember me</span></label>
+                    <a href="mailto:hello@signaljournal.example?subject=Password%20reset">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn">Continue to Signal <span aria-hidden="true">→</span></button>
+            </form>
+            <p class="login-note">New here? <a href="mailto:hello@signaljournal.example?subject=Create%20member%20account">Create a member account</a></p>
+        </section>
+    </main>
 
-            <div class="input-box">
-                <label>Password</label>
-                <input type="password" required>
-            </div>
-
-            <div class="remember-forget">
-                <label><input type="checkbox"> Remember me</label>
-                <a href="#">Forgot Password?</a>
-            </div>
-
-            <button type="submit" class="btn">Login</button>
-        </form>
-    </div>
-</div>
+    <footer class="login-footer">
+        <p>© 2026 Signal Journal</p>
+        <a href="index.html">Return to homepage <span aria-hidden="true">↗</span></a>
+    </footer>
 </body>
 </html>

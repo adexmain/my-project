@@ -1,0 +1,31 @@
+{
+  "folders": [
+    {
+      "name": "Portfolio",
+      "path": "portfolio"
+    },
+    {
+      "name": "Ledgerly - JavaScript",
+      "path": "ledgerly-js"
+    },
+    {
+      "name": "Ledgerly - React",
+      "path": "ledgerly-react"
+    },
+    {
+      "name": "Unfinished - my-app",
+      "path": "my-app"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.DS_Store": true,
+      "**/node_modules": true,
+      "**/build": true
+    },
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/build": true
+    }
+  }
+}
